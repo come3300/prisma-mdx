@@ -31,7 +31,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <div className="flex min-h-screen flex-col">
             <Navigation currentUser={currentUser} />
 
-            <main className="container mx-auto max-w-screen-sm flex-1 px-1 py-5">{children}</main>
+            <main className="container mx-auto max-w-screen-sm flex-1 px-1 py-5">
+              {/* 新しい Layout コンポーネントを追加 */}
+              <Layout>{children}</Layout>
+            </main>
 
             <footer className="py-5">
               <div className="text-center text-sm">
@@ -43,4 +46,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </body>
     </html>
   )
+}
+
+// 新しい Layout コンポーネント
+export function Layout({ children }: { children: React.ReactNode }) {
+  return <article className="prose prose-xl">{children}</article>;
 }
