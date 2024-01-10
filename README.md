@@ -1,5 +1,8 @@
 # ログイン機能付きMDXで記事が書けるNext.js環境　Approuter使用
 
+ログイン機能付きのmdxでQiiitaっぽくも書けるサイト構築の基盤みたいなのを作ってみた
+こいつをcloneして色々使えるようの汎用的なリポジトリ
+
 ## Next.jsとPrismaで構築する認証システム(メールアドレス、Google認証)
 
 https://zenn.dev/hathle/books/next-prisma-auth-book
